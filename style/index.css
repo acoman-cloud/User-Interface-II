@@ -1,1 +1,142 @@
-/* Add CSS styling here */
+/* CSS reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+*{
+	box-sizing: border-box;
+	/*border: 1px solid red;*/
+	padding: 0;
+	margin:0;
+	max-width:100%;
+}
+html{
+	font-size: 62.5%;
+}
+body{
+	line-height: 1;
+	font-size:1.6rem;
+	font-family: 'Oxygen', sans-serif;
+}
+header{
+	display:flex;
+	font-family: 'Oxygen', sans-serif;
+	height:10vh;
+}
+
+section{
+	padding:4% 0;
+}
+nav{
+display:flex;
+flex-direction:row;
+justify-content:flex-end;
+align-items:center;
+width:60%;
+height:40%;
+margin:1% 0;
+padding: 0 0;
+}
+footer{
+	background:lightgray;
+	text-align: center;
+}
+
+button{
+	margin: 5% 0;
+	padding:1.5% 2.5%;
+	font-family: 'Oxygen', sans-serif;
+}
+
+h1, h2{
+	text-decoration: none;
+	text-align:center;
+	margin-bottom: 5%;
+}
+h1{
+font-size:5rem;
+color:white;
+}
+h2{
+	font-size: 3.5rem;
+	display:flex;
+	width:27%;
+	padding:1% 1%;
+	padding-bottom: 0;
+}
+nav a{
+	border: 2px solid black;
+	padding:4% 8%;
+}
+.links{
+	width:40%;
+	display:flex;
+	justify-content:space-between;
+}
+.links a{
+	text-decoration:none;
+	color:black;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+.top{
+	height:60vh;
+	background-image:url('https://media.istockphoto.com/photos/colorful-background-picture-id1280385511?s=612x612');
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin:0 8%;
+	text-align: center;;
+}
+.main button{
+	font-size: 1.7rem;
+	padding: 2% 4%;
+	line-height: 1;
+}	
+
+img{
+	height:33vh;
+	width:30vw;
+}
+
+.row{
+	display:flex;
+	justify-content: space-between;
+	flex-direction: row;
+	padding:2%;
+}
+.row2{
+	display:flex;
+	justify-content: space-around;
+	padding:2%;
+}
+a:hover{
+	color:white;
+	background:black;
+}

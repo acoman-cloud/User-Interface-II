@@ -1,4 +1,4 @@
-/* Add CSS styling here */
+/* CSS reset*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -14,7 +14,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -24,9 +23,12 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+body {
+	line-height: 1;
+}
 *{
 	box-sizing: border-box;
-	/*border: 1px solid grey;*/
+	/*border: 1px solid red;*/
 	padding: 0;
 	margin:0;
 	max-width:100%;
@@ -34,27 +36,29 @@ footer, header, hgroup, menu, nav, section {
 html{
 	font-size: 62.5%;
 }
-body {
+body{
 	line-height: 1;
 	font-size:1.6rem;
 	font-family: 'Oxygen', sans-serif;
 }
 header{
 	display:flex;
-	flex-direction:column;
 	font-family: 'Oxygen', sans-serif;
+	height:10vh;
 }
+
 section{
 	padding:4% 0;
 }
 nav{
 display:flex;
-justify-content:space-between;
+flex-direction:row;
+justify-content:flex-end;
 align-items:center;
-width:100%;
-top:0;
-margin:4% 0;
-padding: 0 3%;
+width:60%;
+height:40%;
+margin:1% 0;
+padding: 0 0;
 }
 footer{
 	background:lightgray;
@@ -78,21 +82,26 @@ color:white;
 }
 h2{
 	font-size: 3.5rem;
+	display:flex;
+	width:27%;
+	padding:1% 1%;
+	padding-bottom: 0;
 }
 nav a{
-	border: 3px solid black;
+	border: 2px solid black;
 	padding:4% 8%;
-
+}
+.links{
+	width:40%;
+	display:flex;
+	justify-content:space-between;
 }
 .links a{
 	text-decoration:none;
 	color:black;
 	font-size: 1.8rem;
 	font-weight: bold;
-	display:flex;
-	flex-direction:row;
 }
-
 .top{
 	height:60vh;
 	background-image:url('https://media.istockphoto.com/photos/colorful-background-picture-id1280385511?s=612x612');
@@ -102,27 +111,30 @@ nav a{
 	display:flex;
 	justify-content:center;
 	align-items:center;
-	margin:0 8%
+	margin:0 8%;
+	text-align: center;;
 }
 .main button{
 	font-size: 1.7rem;
 	padding: 2% 4%;
 	line-height: 1;
-}
-
-.top, .bottom{
-	text-align: center;
-}
+}	
 
 img{
 	height:33vh;
+	width:30vw;
 }
 
-.bottom row1{
+.row{
 	display:flex;
-	flex-direction: row;
 	justify-content: space-between;
-	align-content: space-evenly;
+	flex-direction: row;
+	padding:2%;
+}
+.row2{
+	display:flex;
+	justify-content: space-around;
+	padding:2%;
 }
 a:hover{
 	color:white;
